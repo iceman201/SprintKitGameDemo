@@ -31,7 +31,8 @@ enum RowType: Int {
 extension GameScene {
     func addPlayer() {
         let dotSize = CGSize(width: 50, height: 50)
-        dotOne = SKSpriteNode(color: .red, size: dotSize)
+        let rocketTexture = SKTexture(image: UIImage(named: "rocket.png")!)
+        dotOne = SKSpriteNode(texture: rocketTexture, size: dotSize)//(color: .red, size: dotSize)
         dotOne.position = CGPoint(x: self.size.width * 0.5 , y: 350)
         dotOne.name = "Player"
         dotOne.physicsBody?.isDynamic = false
@@ -40,7 +41,7 @@ extension GameScene {
         dotOne.physicsBody?.collisionBitMask = 0
         dotOne.physicsBody?.contactTestBitMask = CollisionBitMask.Obstacle
         
-        dotTwo = SKSpriteNode(color: .red, size: dotSize)
+        dotTwo = SKSpriteNode(texture: rocketTexture, size: dotSize)
         dotTwo.position = CGPoint(x: self.size.width * 0.5 , y: 350)
         dotTwo.name = "Player"
         dotTwo.physicsBody?.isDynamic = false
@@ -145,7 +146,7 @@ extension GameScene {
             addChild(obstacleThree)
 
             break
-            
         }
     }
+    
 }

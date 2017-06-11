@@ -15,6 +15,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var lastUpdate = TimeInterval()
     var lastYield = TimeInterval()
     
+    var starfield:SKEmitterNode!
+    
     var initalPosition: CGPoint!
     
     override func didMove(to view: SKView) {
@@ -22,6 +24,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         physicsWorld.contactDelegate = self
         addPlayer()
         addRow(type: .threeS)
+        
+        starfield = SKEmitterNode(fileNamed: "Starfield")
+        starfield.position = CGPoint(x: 550, y: 1920)
+        
+        starfield.advanceSimulationTime(10)
+        self.addChild(starfield)
+        
+        //starfield.zPosition = -1
+        
     }
     
     fileprivate func generateRandomeRow() {
@@ -84,12 +95,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     override func update(_ currentTime: TimeInterval) {
+        
         var timeSinceLastUpdate = currentTime - lastUpdate
         lastUpdate = currentTime
         if timeSinceLastUpdate > 1 {
             timeSinceLastUpdate = 1/60
             lastUpdate = currentTime
         }
+        
         updateWithTimeSinceLastUpdate(timeSinceLastUpdate: timeSinceLastUpdate)
     }
 }

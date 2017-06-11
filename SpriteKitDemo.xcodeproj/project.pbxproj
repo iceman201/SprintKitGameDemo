@@ -18,6 +18,7 @@
 		05F26D5A1EEC204A00A87726 /* SpriteKitDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F26D591EEC204A00A87726 /* SpriteKitDemoTests.swift */; };
 		05F26D651EEC214700A87726 /* Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F26D641EEC214700A87726 /* Elements.swift */; };
 		05F26D691EECDE6500A87726 /* GameoverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F26D681EECDE6500A87726 /* GameoverScene.swift */; };
+		05F26D6B1EED018800A87726 /* Starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = 05F26D6A1EED018800A87726 /* Starfield.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		05F26D5B1EEC204A00A87726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05F26D641EEC214700A87726 /* Elements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Elements.swift; sourceTree = "<group>"; };
 		05F26D681EECDE6500A87726 /* GameoverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameoverScene.swift; sourceTree = "<group>"; };
+		05F26D6A1EED018800A87726 /* Starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Starfield.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				05F26D641EEC214700A87726 /* Elements.swift */,
 				05F26D461EEC204A00A87726 /* GameViewController.swift */,
 				05F26D481EEC204A00A87726 /* Main.storyboard */,
+				05F26D6A1EED018800A87726 /* Starfield.sks */,
 				05F26D4B1EEC204A00A87726 /* Assets.xcassets */,
 				05F26D4D1EEC204A00A87726 /* LaunchScreen.storyboard */,
 				05F26D501EEC204A00A87726 /* Info.plist */,
@@ -196,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05F26D6B1EED018800A87726 /* Starfield.sks in Resources */,
 				05F26D4A1EEC204A00A87726 /* Main.storyboard in Resources */,
 				05F26D411EEC204A00A87726 /* GameScene.sks in Resources */,
 				05F26D4C1EEC204A00A87726 /* Assets.xcassets in Resources */,
@@ -432,6 +436,7 @@
 				05F26D601EEC204A00A87726 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05F26D611EEC204A00A87726 /* Build configuration list for PBXNativeTarget "SpriteKitDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +445,7 @@
 				05F26D631EEC204A00A87726 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
