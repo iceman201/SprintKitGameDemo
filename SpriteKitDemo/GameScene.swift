@@ -62,7 +62,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     func didBegin(_ contact: SKPhysicsContact) {
         if contact.bodyA.node?.name == "Player" {
             print("Gameover")
+            showGameOver()
         }
+    }
+    
+    fileprivate func showGameOver() {
+        let transition = SKTransition.fade(withDuration: TimeInterval(0.5))
+        let gameOverScene = GameoverScene(size: self.size)
+        self.view?.presentScene(gameOverScene, transition: transition)
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
